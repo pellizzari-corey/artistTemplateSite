@@ -36,7 +36,7 @@ const portfolioItems: PortfolioItem[] = [
     category: "emotes",
     image: EMOTE_IMG1,
     description: "Single emote for Twitch.Tv/Freerod",
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const portfolioItems: PortfolioItem[] = [
     category: "emotes",
     image: EMOTE_IMG2,
     description: "Emote Set for Twitch.Tv/ImHannahG",
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ const portfolioItems: PortfolioItem[] = [
     category: "emotes",
     image: EMOTE_IMG3,
     description: "Emote Set for Twitch.Tv/Yoozacc",
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
@@ -60,8 +60,9 @@ const portfolioItems: PortfolioItem[] = [
     category: "emotes",
     image: EMOTE_IMG4,
     description: "Emote Set for Twitch.Tv/TakikageDetriot",
-    featured: true,
+    featured: false,
   },
+
   // {
   //   id: 1,
   //   title: "Chibi Emote Pack",
@@ -185,7 +186,7 @@ export default function Portfolio() {
                   className={`${item.featured ? "md:col-span-2 md:row-span-1" : ""}`}
                 >
                   <div className="relative overflow-hidden group cursor-pointer bg-card border border-border hover:border-coral/30 transition-colors duration-300">
-                    <div className={`relative ${item.featured ? "aspect-[2/1]" : "aspect-[4/3]"} overflow-hidden`}>
+                    <div className={`relative overflow-hidden`}>
                       <img
                         src={item.image}
                         alt={item.title}
