@@ -31,7 +31,7 @@ export default function Footer() {
                 </span>
               </div>
               <span className="font-[var(--font-display)] font-bold text-lg tracking-tight">
-                EMBERTAIL
+                ATOUCHOFFLARE
               </span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
@@ -111,7 +111,7 @@ export default function Footer() {
               </a>
             </div>
             <p className="text-muted-foreground text-sm">
-              hello@artistry.com
+              contact@atouchofflare.com
             </p>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-xs">
-            &copy; {new Date().getFullYear()} Artistry. All rights reserved.
+            &copy; {new Date().getFullYear()} ATouchOfFlare. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <span className="text-muted-foreground text-xs">

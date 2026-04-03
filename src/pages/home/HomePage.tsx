@@ -110,7 +110,7 @@ export default function Home() {
               variants={fadeUp}
               className="mt-6 md:mt-8 text-muted-foreground text-lg md:text-xl leading-relaxed max-w-lg"
             >
-              Custom emotes, branding, and digital art for streamers and content
+              Custom emotes and digital art for streamers and content
               creators who refuse to blend in.
             </motion.p>
 

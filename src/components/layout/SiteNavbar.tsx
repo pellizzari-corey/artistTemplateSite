@@ -64,7 +64,7 @@ export default function Navbar() {
               </span>
             </div>
             <span className="font-[var(--font-display)] font-bold text-lg md:text-xl tracking-tight text-foreground">
-              EMBERTAIL
+              ATOUCHOFFLARE
             </span>
           </Link>
 
