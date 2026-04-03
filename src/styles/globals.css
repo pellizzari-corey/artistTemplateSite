@@ -1,0 +1,121 @@
+/* Global styles */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-[var(--font-body)];
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image:
+      radial-gradient(circle at top, color-mix(in oklab, var(--flame) 24%, transparent) 0%, transparent 34%),
+      radial-gradient(circle at 85% 12%, color-mix(in oklab, var(--amber) 18%, transparent) 0%, transparent 22%),
+      linear-gradient(180deg, color-mix(in oklab, var(--background) 70%, black) 0%, var(--background) 55%, color-mix(in oklab, var(--surface-deep) 75%, black) 100%);
+    background-attachment: fixed;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: oklch(0.72 0.19 45 / 0.35);
+    color: oklch(0.98 0.01 85);
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1400px;
+    }
+  }
+
+  .link-underline {
+    position: relative;
+    display: inline-block;
+  }
+
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--flame), var(--amber));
+    box-shadow: 0 0 18px color-mix(in oklab, var(--flame) 50%, transparent);
+    transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .link-underline:hover::after {
+    width: 100%;
+  }
+
+  .fire-card {
+    background: linear-gradient(180deg, color-mix(in oklab, var(--card) 90%, white) 0%, var(--card) 100%);
+    border: 1px solid color-mix(in oklab, var(--border) 70%, var(--amber) 30%);
+    box-shadow:
+      0 10px 30px color-mix(in oklab, black 82%, var(--flame) 18%),
+      inset 0 1px 0 color-mix(in oklab, white 12%, transparent);
+  }
+
+  .fire-button {
+    background: linear-gradient(135deg, var(--flame), var(--amber));
+    color: var(--primary-foreground);
+    box-shadow: 0 10px 24px color-mix(in oklab, var(--flame) 32%, transparent);
+  }
+
+  .fire-button:hover {
+    filter: brightness(1.05);
+    box-shadow: 0 14px 30px color-mix(in oklab, var(--flame) 42%, transparent);
+  }
+}

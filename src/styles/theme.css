@@ -1,0 +1,100 @@
+/* Fire / Flare / Flareon global design tokens */
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Legacy semantic names kept so existing components inherit the new vibe */
+  --color-coral: var(--flame);
+  --color-coral-light: var(--flame-soft);
+  --color-coral-dark: var(--ember);
+  --color-yellow: var(--amber);
+  --color-yellow-light: var(--gold);
+  --color-yellow-dark: var(--ember-bright);
+  --color-slate-brand: var(--ember-plum);
+  --color-slate-brand-light: var(--smoke-lilac);
+  --color-slate-brand-dark: var(--ash);
+  --color-surface-dark: var(--surface);
+  --color-surface-darker: var(--surface-deep);
+
+  /* Named palette for future components */
+  --flame: oklch(0.72 0.19 45);
+  --flame-soft: oklch(0.8 0.15 55);
+  --ember: oklch(0.58 0.16 35);
+  --ember-bright: oklch(0.67 0.18 38);
+  --amber: oklch(0.85 0.14 75);
+  --gold: oklch(0.9 0.1 85);
+  --ember-plum: oklch(0.42 0.08 20);
+  --smoke-lilac: oklch(0.72 0.05 35);
+  --ash: oklch(0.22 0.02 25);
+  --surface: oklch(0.2 0.025 30);
+  --surface-deep: oklch(0.16 0.02 28);
+
+  --font-display: "Averia Serif Libre", "Georgia", serif;
+  --font-body: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --radius: 1rem;
+  --background: oklch(0.15 0.02 28);
+  --foreground: oklch(0.95 0.02 75);
+  --card: oklch(0.2 0.025 30);
+  --card-foreground: oklch(0.95 0.02 75);
+  --popover: oklch(0.19 0.025 30);
+  --popover-foreground: oklch(0.95 0.02 75);
+  --primary: oklch(0.72 0.19 45);
+  --primary-foreground: oklch(0.16 0.02 28);
+  --secondary: oklch(0.26 0.03 30);
+  --secondary-foreground: oklch(0.92 0.02 76);
+  --muted: oklch(0.28 0.02 30);
+  --muted-foreground: oklch(0.78 0.03 60);
+  --accent: oklch(0.85 0.14 75);
+  --accent-foreground: oklch(0.16 0.02 28);
+  --destructive: oklch(0.62 0.22 28);
+  --destructive-foreground: oklch(0.98 0.01 85);
+  --border: oklch(0.35 0.03 35);
+  --input: oklch(0.28 0.02 30);
+  --ring: oklch(0.76 0.16 60);
+}
+
+.dark {
+  --background: oklch(0.15 0.02 28);
+  --foreground: oklch(0.95 0.02 75);
+  --card: oklch(0.2 0.025 30);
+  --card-foreground: oklch(0.95 0.02 75);
+  --popover: oklch(0.19 0.025 30);
+  --popover-foreground: oklch(0.95 0.02 75);
+  --primary: oklch(0.72 0.19 45);
+  --primary-foreground: oklch(0.16 0.02 28);
+  --secondary: oklch(0.26 0.03 30);
+  --secondary-foreground: oklch(0.92 0.02 76);
+  --muted: oklch(0.28 0.02 30);
+  --muted-foreground: oklch(0.78 0.03 60);
+  --accent: oklch(0.85 0.14 75);
+  --accent-foreground: oklch(0.16 0.02 28);
+  --destructive: oklch(0.62 0.22 28);
+  --destructive-foreground: oklch(0.98 0.01 85);
+  --border: oklch(0.35 0.03 35);
+  --input: oklch(0.28 0.02 30);
+  --ring: oklch(0.76 0.16 60);
+}
