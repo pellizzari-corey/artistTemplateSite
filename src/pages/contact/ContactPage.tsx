@@ -7,7 +7,7 @@ import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { toast } from "sonner";
-import { Send, Mail, Twitter, Instagram, Clock, MessageSquare } from "lucide-react";
+import { Send, Mail, X, Instagram, Clock, MessageSquare } from "lucide-react";
 
 const commissionInfo = [
   {
@@ -224,12 +224,12 @@ export default function Contact() {
                     hello@artistry.com
                   </a>
                   <a
-                    href="https://twitter.com"
+                    href="https://x.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-muted-foreground hover:text-coral transition-colors text-sm"
                   >
-                    <Twitter size={16} />
+                    <X size={16} />
                     @artistry
                   </a>
                   <a

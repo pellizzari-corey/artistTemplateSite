@@ -9,13 +9,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { ExternalLink } from "lucide-react";
 
-const EMOTE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/emote-showcase-RDUFExnvnnAj2PHrXvh92Z.webp";
-const BRANDING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/branding-showcase-PVVBdQsYgzv2zzeLFeVHvS.webp";
-const WORKSPACE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/artist-workspace-hpMrV4xhM4A4mWVThyVLaV.webp";
 const EMOTE_IMG1 = "https://emotesgallery.carrd.co/assets/images/gallery01/d5559c0d.png?v=7681a59d";
 const EMOTE_IMG2 = "https://emotesgallery.carrd.co/assets/images/gallery01/2e8b1e62.png?v=7681a59d";
 const EMOTE_IMG3 = "https://emotesgallery.carrd.co/assets/images/gallery01/5b8b5d2c.png?v=7681a59d";
 const EMOTE_IMG4 = "https://emotesgallery.carrd.co/assets/images/gallery01/924566cf.png?v=7681a59d";
+const EMOTE_IMG5 = "https://emotesgallery.carrd.co/assets/images/gallery01/3fa62c7d.png?v=7681a59d";
 
 type Category = "all" | "emotes" 
 // | "branding" | "overlays" | "illustrations";
@@ -62,65 +60,14 @@ const portfolioItems: PortfolioItem[] = [
     description: "Emote Set for Twitch.Tv/TakikageDetriot",
     featured: false,
   },
-
-  // {
-  //   id: 1,
-  //   title: "Chibi Emote Pack",
-  //   category: "emotes",
-  //   image: EMOTE_IMG,
-  //   description: "Set of 8 custom chibi emotes for a Twitch partner",
-  //   featured: true,
-  // },
-  // {
-  //   id: 2,
-  //   title: "CY Brand Identity",
-  //   category: "branding",
-  //   image: BRANDING_IMG,
-  //   description: "Full brand package including logo, overlays, and social media kit",
-  //   featured: true,
-  // },
-  // {
-  //   id: 3,
-  //   title: "Creative Workspace",
-  //   category: "illustrations",
-  //   image: WORKSPACE_IMG,
-  //   description: "Digital illustration of the creative process",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Stream Overlay Pack",
-  //   category: "overlays",
-  //   image: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=600&h=400&fit=crop",
-  //   description: "Complete stream overlay set with alerts and transitions",
-  // },
-  // {
-  //   id: 5,
-  //   title: "Kawaii Emote Set",
-  //   category: "emotes",
-  //   image: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=600&h=400&fit=crop",
-  //   description: "Cute kawaii-style emotes for a variety streamer",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Esports Logo",
-  //   category: "branding",
-  //   image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
-  //   description: "Bold esports team logo and jersey design",
-  // },
-  // {
-  //   id: 7,
-  //   title: "Mascot Character",
-  //   category: "illustrations",
-  //   image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop",
-  //   description: "Custom mascot character for a gaming community",
-  // },
-  // {
-  //   id: 8,
-  //   title: "Minimal Stream Pack",
-  //   category: "overlays",
-  //   image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop",
-  //   description: "Clean, minimal stream overlay package",
-  // },
+  {
+    id:5,
+    title: "DaintySiren Emote Set",
+    category: "emotes",
+    image: EMOTE_IMG5,
+    description: "Emote Set for Twitch.Tv/DaintySiren",
+    featured: false,
+  },
 ];
 
 const categories: { value: Category; label: string }[] = [

@@ -6,7 +6,7 @@
 
 import { Link } from "wouter";
 import { getPagesByGroup } from "@/lib/pageRegistry";
-import { Twitter, Instagram, Mail } from "lucide-react";
+import { X, Mail, Instagram } from "lucide-react";
 
 export default function Footer() {
   const mainPages = getPagesByGroup("main");
@@ -85,16 +85,16 @@ export default function Footer() {
             </h4>
             <div className="flex gap-4 mb-6">
               <a
-                href="https://twitter.com"
+                href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center bg-muted hover:bg-coral text-muted-foreground hover:text-background transition-all duration-200"
-                aria-label="Twitter"
+                aria-label="X"
               >
-                <Twitter size={18} />
+                <X size={18} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/atouchofflare/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center bg-muted hover:bg-coral text-muted-foreground hover:text-background transition-all duration-200"
@@ -103,7 +103,7 @@ export default function Footer() {
                 <Instagram size={18} />
               </a>
               <a
-                href="mailto:hello@artistry.com"
+                href="mailto:contact@atouchofflare.com"
                 className="w-10 h-10 flex items-center justify-center bg-muted hover:bg-coral text-muted-foreground hover:text-background transition-all duration-200"
                 aria-label="Email"
               >
