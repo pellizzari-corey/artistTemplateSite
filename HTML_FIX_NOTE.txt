@@ -1,1 +1,0 @@
-Fixed malformed index.html by replacing leftover broken analytics/script markup with a clean Vite index.html shell.
