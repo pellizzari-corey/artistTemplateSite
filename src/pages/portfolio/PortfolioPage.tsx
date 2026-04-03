@@ -13,7 +13,8 @@ const EMOTE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5Z
 const BRANDING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/branding-showcase-PVVBdQsYgzv2zzeLFeVHvS.webp";
 const WORKSPACE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/artist-workspace-hpMrV4xhM4A4mWVThyVLaV.webp";
 
-type Category = "all" | "emotes" | "branding" | "overlays" | "illustrations";
+type Category = "all" | "emotes" 
+// | "branding" | "overlays" | "illustrations";
 
 interface PortfolioItem {
   id: number;
@@ -33,64 +34,64 @@ const portfolioItems: PortfolioItem[] = [
     description: "Set of 8 custom chibi emotes for a Twitch partner",
     featured: true,
   },
-  {
-    id: 2,
-    title: "CY Brand Identity",
-    category: "branding",
-    image: BRANDING_IMG,
-    description: "Full brand package including logo, overlays, and social media kit",
-    featured: true,
-  },
-  {
-    id: 3,
-    title: "Creative Workspace",
-    category: "illustrations",
-    image: WORKSPACE_IMG,
-    description: "Digital illustration of the creative process",
-  },
-  {
-    id: 4,
-    title: "Stream Overlay Pack",
-    category: "overlays",
-    image: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=600&h=400&fit=crop",
-    description: "Complete stream overlay set with alerts and transitions",
-  },
-  {
-    id: 5,
-    title: "Kawaii Emote Set",
-    category: "emotes",
-    image: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=600&h=400&fit=crop",
-    description: "Cute kawaii-style emotes for a variety streamer",
-  },
-  {
-    id: 6,
-    title: "Esports Logo",
-    category: "branding",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
-    description: "Bold esports team logo and jersey design",
-  },
-  {
-    id: 7,
-    title: "Mascot Character",
-    category: "illustrations",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop",
-    description: "Custom mascot character for a gaming community",
-  },
-  {
-    id: 8,
-    title: "Minimal Stream Pack",
-    category: "overlays",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop",
-    description: "Clean, minimal stream overlay package",
-  },
+  // {
+  //   id: 2,
+  //   title: "CY Brand Identity",
+  //   category: "branding",
+  //   image: BRANDING_IMG,
+  //   description: "Full brand package including logo, overlays, and social media kit",
+  //   featured: true,
+  // },
+  // {
+  //   id: 3,
+  //   title: "Creative Workspace",
+  //   category: "illustrations",
+  //   image: WORKSPACE_IMG,
+  //   description: "Digital illustration of the creative process",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Stream Overlay Pack",
+  //   category: "overlays",
+  //   image: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=600&h=400&fit=crop",
+  //   description: "Complete stream overlay set with alerts and transitions",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Kawaii Emote Set",
+  //   category: "emotes",
+  //   image: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=600&h=400&fit=crop",
+  //   description: "Cute kawaii-style emotes for a variety streamer",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Esports Logo",
+  //   category: "branding",
+  //   image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
+  //   description: "Bold esports team logo and jersey design",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Mascot Character",
+  //   category: "illustrations",
+  //   image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop",
+  //   description: "Custom mascot character for a gaming community",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Minimal Stream Pack",
+  //   category: "overlays",
+  //   image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop",
+  //   description: "Clean, minimal stream overlay package",
+  // },
 ];
 
 const categories: { value: Category; label: string }[] = [
   { value: "all", label: "All Work" },
   { value: "emotes", label: "Emotes" },
-  { value: "branding", label: "Branding" },
-  { value: "overlays", label: "Overlays" },
-  { value: "illustrations", label: "Illustrations" },
+  // { value: "branding", label: "Branding" },
+  // { value: "overlays", label: "Overlays" },
+  // { value: "illustrations", label: "Illustrations" },
 ];
 
 export default function Portfolio() {

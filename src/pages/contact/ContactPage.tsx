@@ -30,11 +30,11 @@ const commissionInfo = [
 const projectTypes = [
   "Emote Pack",
   "Single Emote",
-  "Full Brand Package",
-  "Logo Design",
-  "Stream Overlay",
-  "Panel Design",
-  "Social Media Kit",
+  // "Full Brand Package",
+  // "Logo Design",
+  // "Stream Overlay",
+  // "Panel Design",
+  // "Social Media Kit",
   "Custom Illustration",
   "Other",
 ];

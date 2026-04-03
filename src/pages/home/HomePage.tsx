@@ -31,20 +31,20 @@ const services = [
     color: "coral",
     link: "/emotes",
   },
-  {
-    icon: Palette,
-    title: "Branding",
-    desc: "Complete brand identities — logos, overlays, banners, and visual systems for creators.",
-    color: "yellow",
-    link: "/branding",
-  },
-  {
-    icon: Layers,
-    title: "Stream Design",
-    desc: "Overlays, panels, alerts, and full stream packages that make your channel stand out.",
-    color: "slate",
-    link: "/portfolio",
-  },
+  // {
+  //   icon: Palette,
+  //   title: "Branding",
+  //   desc: "Complete brand identities — logos, overlays, banners, and visual systems for creators.",
+  //   color: "yellow",
+  //   link: "/branding",
+  // },
+  // {
+  //   icon: Layers,
+  //   title: "Stream Design",
+  //   desc: "Overlays, panels, alerts, and full stream packages that make your channel stand out.",
+  //   color: "slate",
+  //   link: "/portfolio",
+  // },
   {
     icon: Sparkles,
     title: "Custom Art",
@@ -224,7 +224,7 @@ export default function Home() {
             </motion.div>
 
             {/* Large branding showcase */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
@@ -255,7 +255,7 @@ export default function Home() {
                   </p>
                 </div>
               </Link>
-            </motion.div>
+            </motion.div> */}
           </div>
 
           <motion.div

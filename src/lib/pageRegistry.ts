@@ -63,14 +63,14 @@ export const pages: PageConfig[] = [
     showInFooter: true,
     group: "services",
   },
-  {
-    path: "/branding",
-    label: "Branding",
-    component: lazy(() => import("@/pages/services/BrandingPage")),
-    showInNav: true,
-    showInFooter: true,
-    group: "services",
-  },
+  // {
+  //   path: "/branding",
+  //   label: "Branding",
+  //   component: lazy(() => import("@/pages/services/BrandingPage")),
+  //   showInNav: true,
+  //   showInFooter: true,
+  //   group: "services",
+  // },
   {
     path: "/about",
     label: "About",
