@@ -12,6 +12,10 @@ import { ExternalLink } from "lucide-react";
 const EMOTE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/emote-showcase-RDUFExnvnnAj2PHrXvh92Z.webp";
 const BRANDING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/branding-showcase-PVVBdQsYgzv2zzeLFeVHvS.webp";
 const WORKSPACE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/artist-workspace-hpMrV4xhM4A4mWVThyVLaV.webp";
+const EMOTE_IMG1 = "https://emotesgallery.carrd.co/assets/images/gallery01/d5559c0d.png?v=7681a59d";
+const EMOTE_IMG2 = "https://emotesgallery.carrd.co/assets/images/gallery01/2e8b1e62.png?v=7681a59d";
+const EMOTE_IMG3 = "https://emotesgallery.carrd.co/assets/images/gallery01/5b8b5d2c.png?v=7681a59d";
+const EMOTE_IMG4 = "https://emotesgallery.carrd.co/assets/images/gallery01/924566cf.png?v=7681a59d";
 
 type Category = "all" | "emotes" 
 // | "branding" | "overlays" | "illustrations";
@@ -28,12 +32,44 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "Chibi Emote Pack",
+    title: "FreeRod Single Emote",
     category: "emotes",
-    image: EMOTE_IMG,
-    description: "Set of 8 custom chibi emotes for a Twitch partner",
+    image: EMOTE_IMG1,
+    description: "Single emote for Twitch.Tv/Freerod",
     featured: true,
   },
+  {
+    id: 2,
+    title: "ImHannahG Emote Set",
+    category: "emotes",
+    image: EMOTE_IMG2,
+    description: "Emote Set for Twitch.Tv/ImHannahG",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Yoozaccc Emote Set",
+    category: "emotes",
+    image: EMOTE_IMG3,
+    description: "Emote Set for Twitch.Tv/Yoozacc",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "TakikageDetriot Emote Set",
+    category: "emotes",
+    image: EMOTE_IMG4,
+    description: "Emote Set for Twitch.Tv/TakikageDetriot",
+    featured: true,
+  },
+  // {
+  //   id: 1,
+  //   title: "Chibi Emote Pack",
+  //   category: "emotes",
+  //   image: EMOTE_IMG,
+  //   description: "Set of 8 custom chibi emotes for a Twitch partner",
+  //   featured: true,
+  // },
   // {
   //   id: 2,
   //   title: "CY Brand Identity",
