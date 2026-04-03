@@ -168,8 +168,8 @@ export default function Portfolio() {
                       <div className="flex items-center gap-2 mb-2">
                         <div className={`w-2 h-2 ${
                           item.category === "emotes" ? "bg-coral" :
-                          item.category === "branding" ? "bg-yellow" :
-                          item.category === "overlays" ? "bg-slate-brand" :
+                          // item.category === "branding" ? "bg-yellow" :
+                          // item.category === "overlays" ? "bg-slate-brand" :
                           "bg-coral-light"
                         }`} />
                         <span className="text-muted-foreground font-[var(--font-display)] text-xs font-semibold uppercase tracking-wider">
