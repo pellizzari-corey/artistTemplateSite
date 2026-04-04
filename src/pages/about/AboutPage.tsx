@@ -8,7 +8,7 @@ import SectionHeading from "@/components/shared/SectionHeading";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 
-const WORKSPACE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/artist-workspace-hpMrV4xhM4A4mWVThyVLaV.webp";
+const WORKSPACE_IMG = "https://hisflareonart.carrd.co/assets/images/image02.jpg?v=3d99b561";
 
 const stats = [
   { value: "500+", label: "Emotes Created" },
@@ -91,7 +91,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative aspect-square overflow-hidden rounded-full border-6 border-[color-mix(in_oklab,var(--border)_70%,var(--amber)_30%)]">
                 <img
                   src={WORKSPACE_IMG}
                   alt="Artist workspace"
@@ -106,7 +106,7 @@ export default function About() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 md:py-20 section-coral">
+      {/* <section className="py-16 md:py-20 section-coral">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
@@ -128,7 +128,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Skills & Tools */}
       <section className="py-24 md:py-32">
@@ -154,9 +154,9 @@ export default function About() {
                       <span className="font-[var(--font-display)] font-semibold text-sm">
                         {skill.name}
                       </span>
-                      <span className="text-muted-foreground text-sm">
+                      {/* <span className="text-muted-foreground text-sm">
                         {skill.level}%
-                      </span>
+                      </span> */}
                     </div>
                     <div className="h-2 bg-muted overflow-hidden">
                       <motion.div

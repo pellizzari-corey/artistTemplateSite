@@ -4,6 +4,8 @@ import { Link } from "wouter";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { ArrowRight, Flame, Sparkles, Star } from "lucide-react";
 
+const STORE_PAGE = "https//etsy.com"
+
 type StoreCategory = "all" | "emotes" | "overlays" | "bundles" | "adoptables";
 
 interface Product {
@@ -17,15 +19,15 @@ interface Product {
 }
 
 const products: Product[] = [
-  {
-    id: "1",
-    name: "Flare Chibi Emote Set",
-    category: "emotes",
-    price: 18,
-    image: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=800&h=800&fit=crop",
-    badge: "Bestseller",
-    description: "Soft, expressive emotes with a warm palette and playful energy.",
-  },
+  // {
+  //   id: "1",
+  //   name: "Flare Chibi Emote Set",
+  //   category: "emotes",
+  //   price: 18,
+  //   image: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=800&h=800&fit=crop",
+  //   badge: "Bestseller",
+  //   description: "Soft, expressive emotes with a warm palette and playful energy.",
+  // },
   // {
   //   id: "2",
   //   name: "Ember Stream Overlay Pack",
@@ -44,15 +46,15 @@ const products: Product[] = [
   //   badge: "Most Value",
   //   description: "A full creator identity pack for streamers, VTubers, and indie brands.",
   // },
-  {
-    id: "4",
-    name: "Foxfire Reaction Pack",
-    category: "emotes",
-    price: 24,
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=800&fit=crop",
-    badge: "New",
-    description: "Cute reaction emotes tuned for Twitch, Discord, and YouTube.",
-  },
+  // {
+  //   id: "4",
+  //   name: "Foxfire Reaction Pack",
+  //   category: "emotes",
+  //   price: 24,
+  //   image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=800&fit=crop",
+  //   badge: "New",
+  //   description: "Cute reaction emotes tuned for Twitch, Discord, and YouTube.",
+  // },
   // {
   //   id: "5",
   //   name: "Campfire Chatting Screen",
@@ -203,12 +205,15 @@ export default function StorePage() {
                 >
                   Ask About Custom Work
                 </Link>
-                <button
-                  type="button"
+                <a
+                  href="https://www.etsy.com/shop/atouchofflare"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit A Touch of Flare Etsy Store"
                   className="rounded-full border border-[color-mix(in_oklab,var(--border)_70%,var(--amber)_30%)] bg-black/15 px-6 py-3 text-sm font-[var(--font-display)] font-bold uppercase tracking-[0.16em] text-foreground transition-colors hover:bg-black/25"
                 >
-                  Etsy integration next
-                </button>
+                  Check out my Etsy Store Page!
+                </a>
               </div>
             </div>
 
