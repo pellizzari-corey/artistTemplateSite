@@ -9,7 +9,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { ExternalLink } from "lucide-react";
 
-const EMOTE_IMG1 = "https://emotesgallery.carrd.co/assets/images/gallery01/d5559c0d.png?v=7681a59d";
+// const EMOTE_IMG1 = "https://emotesgallery.carrd.co/assets/images/gallery01/d5559c0d.png?v=7681a59d";
+const EMOTE_IMG1 = "/art/e_freerod.png"
 const EMOTE_IMG2 = "https://emotesgallery.carrd.co/assets/images/gallery01/2e8b1e62.png?v=7681a59d";
 const EMOTE_IMG3 = "https://emotesgallery.carrd.co/assets/images/gallery01/5b8b5d2c.png?v=7681a59d";
 const EMOTE_IMG4 = "https://emotesgallery.carrd.co/assets/images/gallery01/924566cf.png?v=7681a59d";
