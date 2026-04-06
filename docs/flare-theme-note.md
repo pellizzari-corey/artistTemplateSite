@@ -1,0 +1,1 @@
+Created flare-theme branch off main. Next intended change: replace src/styles/theme.css with the warmer charcoal + flare palette discussed in chat.
