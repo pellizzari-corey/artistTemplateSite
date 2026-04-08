@@ -27,7 +27,7 @@
 }
 
 .section-coral {
-  background: linear-gradient(135deg, color-mix(in oklab, var(--flame) 92%, black), var(--ember));
+  background: linear-gradient(135deg, color-mix(in oklab, var(--flame) 84%, black), var(--ember));
   color: var(--primary-foreground);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .section-surface {
-  background: linear-gradient(180deg, color-mix(in oklab, var(--surface) 88%, white), var(--surface));
+  background: linear-gradient(180deg, color-mix(in oklab, var(--surface) 92%, white), var(--surface));
   color: var(--foreground);
 }
 

@@ -6,12 +6,11 @@
 
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Palette, Smile, Layers, Sparkles } from "lucide-react";
+import { ArrowRight, Smile, Sparkles } from "lucide-react";
 import SectionHeading from "@/components/shared/SectionHeading";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/hero-bg-X7yBgNdvzGduBNDDLvvkuF.webp";
 const EMOTE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/emote-showcase-RDUFExnvnnAj2PHrXvh92Z.webp";
-const BRANDING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663500119311/Ho5ZmJC4o5Kb3xStbbSt7v/branding-showcase-PVVBdQsYgzv2zzeLFeVHvS.webp";
 
 const stagger = {
   hidden: {},
@@ -31,20 +30,6 @@ const services = [
     color: "coral",
     link: "/emotes",
   },
-  // {
-  //   icon: Palette,
-  //   title: "Branding",
-  //   desc: "Complete brand identities — logos, overlays, banners, and visual systems for creators.",
-  //   color: "yellow",
-  //   link: "/branding",
-  // },
-  // {
-  //   icon: Layers,
-  //   title: "Stream Design",
-  //   desc: "Overlays, panels, alerts, and full stream packages that make your channel stand out.",
-  //   color: "slate",
-  //   link: "/portfolio",
-  // },
   {
     icon: Sparkles,
     title: "Custom Art",
@@ -223,39 +208,6 @@ export default function Home() {
               </Link>
             </motion.div>
 
-            {/* Large branding showcase */}
-            {/* <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              <Link
-                to="/branding"
-                className="block relative overflow-hidden group aspect-[4/3]"
-              >
-                <img
-                  src={BRANDING_IMG}
-                  alt="Branding design showcase"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6 md:p-8">
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-2 h-2 bg-yellow" />
-                    <span className="text-yellow font-[var(--font-display)] text-xs font-semibold uppercase tracking-wider">
-                      Branding
-                    </span>
-                  </div>
-                  <h3 className="font-[var(--font-display)] font-bold text-xl md:text-2xl text-foreground">
-                    Full Brand Identities
-                  </h3>
-                  <p className="text-muted-foreground text-sm mt-1">
-                    Logos, overlays, and visual systems for creators
-                  </p>
-                </div>
-              </Link>
-            </motion.div> */}
           </div>
 
           <motion.div
