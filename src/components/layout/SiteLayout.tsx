@@ -18,13 +18,14 @@ export default function Layout({ children }: LayoutProps) {
 
   // Scroll to top on route change
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [location]);
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Navbar />
       <motion.main
+        id="main-content"
         key={location}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}

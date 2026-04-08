@@ -54,6 +54,12 @@ export default function Navbar() {
         }`}
       >
         <div className="container flex items-center justify-between h-16 md:h-20">
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[60] bg-background border border-border px-3 py-2 text-sm font-semibold"
+          >
+            Skip to content
+          </a>
           {/* Brand Mark */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="relative w-9 h-9 md:w-10 md:h-10">
@@ -113,6 +119,8 @@ export default function Navbar() {
             onClick={() => setMobileOpen(!mobileOpen)}
             className="lg:hidden relative z-50 w-10 h-10 flex items-center justify-center text-foreground"
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-nav-menu"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -133,7 +141,7 @@ export default function Navbar() {
             <div className="absolute top-20 right-8 w-24 h-24 bg-coral/10 rounded-full blur-xl" />
             <div className="absolute bottom-20 left-8 w-16 h-16 bg-yellow/10 rotate-45 blur-md" />
 
-            <nav className="flex flex-col gap-2 w-full">
+            <nav id="mobile-nav-menu" className="flex flex-col gap-2 w-full">
               {navPages.map((page, i) => {
                 const isActive = location === page.path;
                 return (
